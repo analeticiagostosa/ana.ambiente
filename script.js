@@ -35,7 +35,7 @@ const perguntas = [
         enunciado: "Quais dos seguintes benefícios são associados ao uso de energias renováveis?",
         alternativas: [
             {
-                texto: " Redução das emissões de gases de efeito estufa e diminuição da poluição do ar.",
+                texto: "Redução das emissões de gases de efeito estufa e diminuição da poluição do ar.",
                 afirmacao: "O uso de energias renováveis reduz as emissões de gases de efeito estufa e ajuda a diminuir a poluição do ar, contribuindo para a mitigação das mudanças climáticas."
             },
             {
@@ -45,7 +45,7 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Por que precisamos de energia?        ",
+        enunciado: "Por que precisamos de energia?",
         alternativas: [
             {
                 texto: "Para acender a luz, preparar nossas refeições e nos transportar de carro até a escola",
@@ -61,7 +61,7 @@ const perguntas = [
         enunciado: "Qual a diferença entre Matriz elétrica e Matriz energética?",
         alternativas: [
             {
-                texto: " A matriz energética representa o conjunto de fontes de energia utilizadas para movimentar os carros, preparar a comida no fogão e gerar eletricidade. a matriz elétrica é formada pelo conjunto de fontes utilizadas apenas para a geração de energia elétrica.",
+                texto: "A matriz energética representa o conjunto de fontes de energia utilizadas para movimentar os carros, preparar a comida no fogão e gerar eletricidade. a matriz elétrica é formada pelo conjunto de fontes utilizadas apenas para a geração de energia elétrica.",
                 afirmacao: "A matriz energética é muito importante em nosso cotidiano,pois está envolvida em muitas coisas do nosso dia a dia."
             },
             {
@@ -78,8 +78,8 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    if (atual >= perguntas.length) {Energias geotérmica e das marés são renováveis, pois utilizam fontes naturais que se regeneram constantemente.
-
+    if (atual >= perguntas.length) {
+        mostraResultado();
         return;
     }
     perguntaAtual = perguntas[atual];
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Curiosidades sobre questões ambientais";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
